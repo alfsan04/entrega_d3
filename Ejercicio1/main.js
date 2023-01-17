@@ -25,7 +25,7 @@ d3.csv("WorldCup.csv").then(data => {
         .key(d => d.Winner)
         .entries(data)
 
-    console.log(nest.sort(values))
+    console.log(nest)
 
     x.domain(nest.map(d => d.key))
     y.domain([0, d3.max(nest.map(d => d.values.length))])

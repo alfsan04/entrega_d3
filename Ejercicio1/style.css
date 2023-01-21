@@ -1,3 +1,15 @@
-.rect {
+rect {
+    fill: lightgoldenrodyellow;
+    stroke: lightcoral;
+    stroke-width: 1px;
+}
+
+text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     fill: black;
+    font-weight: bold;
+}
+
+.texto {
+    fill: saddlebrown;
 }

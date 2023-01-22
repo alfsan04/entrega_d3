@@ -1,0 +1,44 @@
+rect {
+    stroke: black;
+    stroke-width: 1px;
+}
+
+.Gisele {
+    fill: lightblue;
+}
+
+.Bar {
+    fill: lightcoral;
+}
+
+.Blake {
+    fill: lightpink;
+}
+
+.Erin {
+    fill: lightgray;
+}
+
+.Toni{
+    fill: lightseagreen;
+}
+.Kelly {
+    fill: lightskyblue
+}
+.Nina {
+    fill: lightslategray;
+}
+
+.Camila {
+    fill: lightcyan;
+}
+
+text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    fill: black;
+    font-weight: bold;
+}
+
+.texto {
+    fill: saddlebrown;
+}

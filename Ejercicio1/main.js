@@ -37,11 +37,10 @@ const xAxis = d3.axisBottom().scale(x)
 const yAxis = d3.axisLeft().scale(y)
 
 var value = 2023
-console.log(value)
 
-d3.select("#mySlider").on("change", function(){
+/*d3.select("#mySlider").on("change", function(){
     value = d3.select(this).property("value")
-})
+})*/
 
 d3.csv("WorldCup.csv").then(data => {
 
@@ -49,10 +48,7 @@ d3.csv("WorldCup.csv").then(data => {
         d.Year = +d.Year
     })
 
-    console.log(data)
-    console.log(value)
     const data2 = data.filter(d => d.Year < value)
-    console.log(data2)
 
     const xLabel = elementGroup.append("text").attr("class", "texto").text("Países")
         .attr("transform", `translate(${width - margin.right - 45}, ${height - margin.bottom + 30})`)
@@ -74,8 +70,6 @@ d3.csv("WorldCup.csv").then(data => {
     }
     
     nest.sort(ordenar)
-
-    console.log(nest)
 
     x.domain(nest.map(d => d.key))
     y.domain([parseInt(0), parseInt(d3.max(nest.map(d => d.values.length)))])
